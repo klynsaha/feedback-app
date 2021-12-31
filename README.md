@@ -1,25 +1,32 @@
 # Feedback App
 
-This project was made with React.
+This project is made with React. It allows users to add, update and delete feedback. It uses a mock REST api with json-server.
 
-## Available Scripts
+This project goes over all of the fundamentals of React including:
 
-In the project directory, you can run:
+-   Components
+-   JSX
+-   Props (proptypes, defaultprops, etc)
+-   State (Component & App Level)
+-   Styling
+-   Handling Events
+-   Lists & Keys
+-   Forms
+-   Context API
+-   HTTP Requests
 
-### `npm start`
+# Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Install dependencies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm run build`
+### Run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-### Deployed on Netlify [Feedback-App](https://feedback-app-using-react.netlify.app/)
+This will run JSON-server on port 5001 and React App on port 3000
