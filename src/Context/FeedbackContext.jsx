@@ -11,14 +11,14 @@ export const FeedbackProvider = ({ children }) => {
     });
 
     useEffect(() => {
-        const fecthData = async () => {
+        const fetchData = async () => {
             const response = await fetch("/feedback?_sort=id&_order=desc");
             const data = await response.json();
 
             setFeedbacks(data);
             setIsLoading(false);
         };
-        fecthData();
+        fetchData();
     }, []);
 
     const addFeedback = async (newFeedback) => {
