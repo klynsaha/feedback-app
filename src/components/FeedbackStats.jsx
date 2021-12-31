@@ -1,6 +1,10 @@
 import React from "react";
+import { useContext } from "react";
+import FeedbackContext from "../Context/FeedbackContext";
 
-function FeedbackStats({ feedbacks }) {
+function FeedbackStats() {
+    const { feedbacks } = useContext(FeedbackContext);
+
     if (!feedbacks || !feedbacks.length) return null;
 
     let average =
