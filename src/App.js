@@ -8,7 +8,6 @@ import AboutPage from "./pages/AboutPage";
 import { FeedbackProvider } from "./Context/FeedbackContext";
 import AboutIconLink from "./components/AboutIconLink";
 
-// added comment to check workflow
 function App() {
     return (
         <FeedbackProvider>
